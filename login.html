@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h2>Enter the passcode to view the website</h2>
+    <form action="/login" method="post">
+        <input type="password" name="passcode" placeholder="Enter passcode">
+        <input type="submit" value="Submit">
+    </form>
+    <!-- Display an error message if the login fails -->
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
