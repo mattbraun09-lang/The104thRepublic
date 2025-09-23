@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-  <style>
+<html>
+<head>
+    <title>ClassifedDocsPage</title>
+    <style>
+        #protected-content {
+            display: none; /* Hide content by default */
+        }
     .my-button {
       display: inline-block;
       padding: 10px 20px;
@@ -8,20 +13,47 @@
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
+      font-family: Arial, sans-serif;
     }
-  </style>
-<head>
+    .my-button:hover {
+      background-color: #0056b3;
+    }
+    </style>
+</head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClassifiedDocsPage</title>
-</head>
 <body>
     <a href="mainPagePlacibo.html" class="my-button">Go back to the Home Page</a>
-            <h1>Classified docs:</h1>
-            <u><h2>HICOM's ONLY</h2></u>
+    <h1>Classified docs:</h1>
+    <u><h2>HICOM's ONLY</h2></u>
+    <div id="login-form">
+        <label for="passcode">Enter Passcode:</label>
+        <input type="password" id="passcode">
+        <button onclick="checkPasscode()">Submit</button>
+    </div>
+
+    <div id="protected-content">
         <br>
         <p>WIP</p>
     </div>
+
+    <script>
+        // Store the correct passcode in a variable
+        var correctPasscode = "CADS12";
+
+        function checkPasscode() {
+            // Get the value from the input field
+            var enteredPasscode = document.getElementById("passcode").value;
+
+            // Check if the entered passcode is correct
+            if (enteredPasscode === correctPasscode) {
+                // If correct, hide the form and show the content
+                document.getElementById("login-form").style.display = "none";
+                document.getElementById("protected-content").style.display = "block";
+            } else {
+                alert("Incorrect passcode. Please try again.");
+            }
+        }
+    </script>
 </body>
 </html>
-
