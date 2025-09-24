@@ -29,6 +29,16 @@
         bottom: 20px;
         left: 20px;
     }
+                .centered-form {
+        display: flex;
+        flex-direction: column; /* Stacks the items vertically */
+        align-items: center; /* Centers the items horizontally */
+        justify-content: center; /* Centers the items vertically */
+        height: 100vh; /* Takes up the full viewport height */
+    }
+        .center-container {
+        text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -42,7 +52,9 @@
     </div>
 
     <div id="protected-content">
+        <div class="center-container">
         <h1>Welcome HICOM!</h1>
+        </div>
         <br>
         <p>You have been choosen or you are already a HICOM and now you have access to the offical HICOM site, never give the password out and do not send this website link to anyone!</p>
         <p>If you are part of the R.L.A then go to the legal page, you can also see classified documentation and see updates and future content comming to this website, thank you for being part of the 104th HICOM's.</p>
@@ -73,3 +85,4 @@
     </script>
 </body>
 </html>
+
