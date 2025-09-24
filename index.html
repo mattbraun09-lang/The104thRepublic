@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>THE104thLoginPage</title>
-    <style>
-        #protected-content {
-            display: none; /* Hide content by default */<!DOCTYPE html>
-<html>
-<head>
     <title>THE104</title>
   <style>
                 body {
@@ -79,63 +73,3 @@
     </script>
 </body>
 </html>
-
-        }
-    .my-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007BFF;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      font-family: Arial, sans-serif;
-    }
-    .my-button:hover {
-      background-color: #0056b3;
-    }
-    </style>
-</head>
-<body>
-    <img src="https://i.imgur.com/6l7RqVe.png" alt="A picture of the 104th banner" height="397" width="1080">
-    <h1>The 104th republic</h1>
-    <h1>HICOM's only</h1>
-    <div id="login-form">
-        <label for="passcode">Enter Passcode:</label>
-        <input type="password" id="passcode">
-        <button onclick="checkPasscode()">Submit</button>
-    </div>
-
-    <div id="protected-content">
-        <h1>Welcome HICOM!</h1>
-        <br>
-        <p>You have been choosen or you are already a HICOM and now you have access to the offical HICOM site, never give the password out and do not send this website link to anyone!</p>
-        <p>If you are part of the R.L.A then go to the legal page, you can also see classified documentation and see updates and future content comming to this website, thank you for being part of the 104th HICOM's.</p>
-        <a href="2ndpage.html" class="my-button">Legal</a>
-        <a href="updatespage.html" class="my-button">updates/future_content</a>
-        <a href="ClassifiedDocs.html" class="my-button">ClassifiedDocs</a>
-    </div>
-
-    <script>
-        // Store the correct passcode in a variable
-        var correctPasscode = "HICOM6767";
-
-        function checkPasscode() {
-            // Get the value from the input field
-            var enteredPasscode = document.getElementById("passcode").value;
-
-            // Check if the entered passcode is correct
-            if (enteredPasscode === correctPasscode) {
-                // If correct, hide the form and show the content
-                document.getElementById("login-form").style.display = "none";
-                document.getElementById("protected-content").style.display = "block";
-            } else {
-                alert("Incorrect passcode. Please try again.");
-            }
-        }
-    </script>
-</body>
-</html>
-
-
-
-
